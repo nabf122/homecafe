@@ -1,6 +1,6 @@
-package com.java.homecafe;
+package com.java.homecafe.coffee;
 
-class Coffee {
+public class Coffee {
 	/*  coffee_name, 커피 이름
 		ice or warm, 아이스 따뜻한
 		price		 가격
@@ -27,4 +27,5 @@ class Coffee {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	
 }

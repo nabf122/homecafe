@@ -27,12 +27,5 @@ class Menu {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-	// 메뉴 리스트 보여주기
-	public void ShowMenuList() {
-		System.out.println("주문할 메뉴를 선택해주세요");
-		System.out.println("아메리카노 4,100원(1)\n아이스 아메리카노 4,100원(2)\n"
-				+ "카페라떼 4,600원(3)\n아이스 카페라떼 4,600원(4)\n"
-				+ "카페모카 5,100원(5)\n아이스 카페모카 5,100원(6)\n");
-	}
+
 }
