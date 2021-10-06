@@ -24,12 +24,12 @@ public class HomeCafe {
 		String order1 = null;
 		int m = 0;
 		
-		display.input_name("ÀÌ¸§");
+		display.input_name("");
 		man.setName(scan.nextLine());
-		display.input_age("³ªÀÌ");
+		display.input_age("");
 		man.setAge(scan.nextInt());
 		
-		// ÁÖ¹® °úÁ¤
+		// ï¿½Ö¹ï¿½ ï¿½ï¿½ï¿½ï¿½
 		while(true) {
 			display.menu();
 			
@@ -40,39 +40,30 @@ public class HomeCafe {
 					order1.charAt(0) == '3' || order1.charAt(0) == '4' || order1.charAt(0) == '5' || order1.charAt(0) == '6') {
 				list.add(order1);	
 			}else {
-				System.out.println("¿Ã¹Ù¸¥ ÁÖ¹® ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä\n");
+				System.out.println("");
 			}
 				
 		}
 		
-		// ±İ¾× ÃæÀüÇÏ±â
+		//
 		display.charge();
 		man.charge();
 		
-		/*
-		coffee = new Americano("µû¶æÇÑ");
-		System.out.println(coffee.getCoffee_name()+" "
-				+coffee.getIceorwarm()+" "+coffee.getPrice()
-				+" "+
-				barista.chk(list.get(0))
-				);
-				*/
 		
-		// ÁÖ¹®ÇÑ ±İ¾× ÇÕ»êÇÏ±â
 		int sum = 0;
 		for (int i = 0; i < list.size(); i++) {
             	if(list.get(i).charAt(0) == '1') {
-            		coffee = new Americano("µû¶æÇÑ");
+            		coffee = new Americano("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(i).charAt(0) == '2') {
-            		coffee = new Americano("¾ÆÀÌ½º");
+            		coffee = new Americano("ï¿½ï¿½ï¿½Ì½ï¿½");
             	} else if(list.get(i).charAt(0) == '3') {
-            		coffee = new Cafelatte("µû¶æÇÑ");
+            		coffee = new Cafelatte("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(i).charAt(0) == '4') {
-            		coffee = new Cafelatte("¾ÆÀÌ½º");
+            		coffee = new Cafelatte("ï¿½ï¿½ï¿½Ì½ï¿½");
             	} else if(list.get(i).charAt(0) == '5') {
-            		coffee = new Cafemocha("µû¶æÇÑ");
+            		coffee = new Cafemocha("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(i).charAt(0) == '6') {
-            		coffee = new Cafemocha("¾ÆÀÌ½º");
+            		coffee = new Cafemocha("ï¿½ï¿½ï¿½Ì½ï¿½");
             	} else {
             	}
             	sum = sum + coffee.getPrice();
@@ -83,24 +74,24 @@ public class HomeCafe {
         
 		System.out.println();
         
-        // Ä¿ÇÇ¸¦ ¸¸µç´Ù
+        // Ä¿ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
         for (int j = 0; j < list.size(); j++) {
             	if(list.get(j).charAt(0) == '1') {
-            		coffee = new Americano("µû¶æÇÑ");
+            		coffee = new Americano("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(j).charAt(0) == '2') {
-            		coffee = new Americano("¾ÆÀÌ½º");
+            		coffee = new Americano("ï¿½ï¿½ï¿½Ì½ï¿½");
             	} else if(list.get(j).charAt(0) == '3') {
-            		coffee = new Cafelatte("µû¶æÇÑ");
+            		coffee = new Cafelatte("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(j).charAt(0) == '4') {
-            		coffee = new Cafelatte("¾ÆÀÌ½º");
+            		coffee = new Cafelatte("ï¿½ï¿½ï¿½Ì½ï¿½");
             	} else if(list.get(j).charAt(0) == '5') {
-            		coffee = new Cafemocha("µû¶æÇÑ");
+            		coffee = new Cafemocha("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             	} else if(list.get(j).charAt(0) == '6') {
-            		coffee = new Cafemocha("¾ÆÀÌ½º");
+            		coffee = new Cafemocha("ï¿½ï¿½ï¿½Ì½ï¿½");
             	}
             	
             	String messege = barista.makeCoffee(coffee.getCoffee_name(), coffee.getIceorwarm());
-            	System.out.println(man.getName()+"´ÔÀÌ "+messege);
+            	System.out.println(man.getName()+"ï¿½ï¿½ï¿½ï¿½ "+messege);
         }
 	}
 }
